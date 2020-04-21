@@ -2,6 +2,11 @@
 Project for Programming and Scripting GMIT 2020
 # Updates made
 
+## 21st April 2020
+* Established how to calculate summary statistics for data using information from [https://towardsdatascience.com/a-quick-introduction-to-the-pandas-python-library-f1b678f34673]
+* Added this into the script
+* Also imported the numpy library into the script as this will be used for later objectives
+* Attempted to introduce for loops into the script to begin to summarise the stats for each variable in groups of variables
 ## 20th April 2020
 * Updated iris.data file to add headings as per additional documentation on [http://archive.ics.uci.edu/ml/datasets/Iris]
 * Established how to read and print CSV files by importing CSV library and pandas, using the following websites
