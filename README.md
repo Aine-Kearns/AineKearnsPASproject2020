@@ -1,5 +1,5 @@
 # AineKearnsPASproject2020
-Project for Programming and Scripting GMIT 2020
+Project Plan for Programming and Scripting GMIT 2020
 - In order to complete this project I will need to complete the following tasks:
   - Import a data file into the analysis.py script and add the pandas and numpy libraries which will allow me to complete statistical calculations and create graphs
   - Define the calculations that will be presented for summary statistics and establish how to calculate this using a for loop
@@ -7,7 +7,7 @@ Project for Programming and Scripting GMIT 2020
   - Write additional code into the script to output the summary statistics to a single text file 
   - Using numpy I will create histograms for each variable and save these as png files
   - I will also create scatter plots for each pair of variables 
-  
+
 # Updates made
 
 ## 22nd April 2020
