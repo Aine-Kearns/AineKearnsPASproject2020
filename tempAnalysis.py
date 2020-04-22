@@ -16,14 +16,23 @@ df = pd.read_csv("iris.data")
 df.columns
 # provides an array of the headings for the data
 
-for col_name in df.columns:
-    print(col_name)
+for col_name in df.columns[0:4]:
+    # this will isolate the four variables that include length and width
+    print("The variable", col_name, "has the following results:")
+    print("The median is", df[col_name].median(),"cm")
+    print("The mean is", df[col_name].mean(),"cm") 
+    print("The standard deviation is", df[col_name].std())
+    print("The maximum value is", df[col_name].max(),"cm")
+    print("The minimum value is", df[col_name].min(),"cm") 
+    # add a blank line to improve readability
+    print("")
+    
 
 
-print(df.median())
-print(df.mean())
-print(df.std())
-print(df.max())
-print(df.min())
-print(df.corr())
+#print(df.median())
+#print(df.mean())
+#print(df.std())
+#print(df.max())
+#print(df.min())
+#print(df.corr())
 

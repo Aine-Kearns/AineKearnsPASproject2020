@@ -1,7 +1,18 @@
 # AineKearnsPASproject2020
 Project for Programming and Scripting GMIT 2020
+- In order to complete this project I will need to complete the following tasks:
+  - Import a data file into the analysis.py script and add the pandas and numpy libraries which will allow me to complete statistical calculations and create graphs
+  - Define the calculations that will be presented for summary statistics and establish how to calculate this using a for loop
+  - The statistical calculations above are only relevant for the ordinal data, simple count measures will be used for the nominal data (i.e. the class)
+  - Write additional code into the script to output the summary statistics to a single text file 
+  - Using numpy I will create histograms for each variable and save these as png files
+  - I will also create scatter plots for each pair of variables 
+  
 # Updates made
 
+## 22nd April 2020
+* Added a for loop into the script, this for loop will iterate through the columns to calculate the statistics for each variable
+* Copied this code from the tempAnalysis.py file (which will be removed from repository) into the analysis.py file
 ## 21st April 2020
 * Established how to calculate summary statistics for data using information from [https://towardsdatascience.com/a-quick-introduction-to-the-pandas-python-library-f1b678f34673]
 * Added this into the script
