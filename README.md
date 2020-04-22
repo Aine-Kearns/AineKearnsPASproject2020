@@ -11,8 +11,9 @@ Project Plan for Programming and Scripting GMIT 2020
 # Updates made
 
 ## 22nd April 2020
-* Added a for loop into the script, this for loop will iterate through the columns to calculate the statistics for each variable
+* Added a "for loop" into the script, this "for loop" will iterate through the columns to calculate the statistics for each variable
 * Copied this code from the tempAnalysis.py file (which will be removed from repository) into the analysis.py file
+* Added in a statistic to examine the correlations between the variables 
 ## 21st April 2020
 * Established how to calculate summary statistics for data using information from [https://towardsdatascience.com/a-quick-introduction-to-the-pandas-python-library-f1b678f34673]
 * Added this into the script
