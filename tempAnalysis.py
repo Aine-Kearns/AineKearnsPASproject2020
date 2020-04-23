@@ -26,13 +26,7 @@ for col_name in df.columns[0:4]:
     print("The minimum value is", df[col_name].min(),"cm") 
     # add a blank line to improve readability
     print("")
-    
 
-
-#print(df.median())
-#print(df.mean())
-#print(df.std())
-#print(df.max())
-#print(df.min())
-#print(df.corr())
-
+print("The following classes of iris flowers are represented in this data: ")
+print(df.groupby(["class"]).count())
+# in order to see the division of the types of flowers within the data

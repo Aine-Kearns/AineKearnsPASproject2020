@@ -9,7 +9,8 @@ Project Plan for Programming and Scripting GMIT 2020
   - I will also create scatter plots for each pair of variables 
 
 # Updates made
-
+## 23rd April 2020
+* As noted in the project plan, statistical measures are not relevant for the class of flowers so a matrix of summary data was created using groupby and count from the pandas library
 ## 22nd April 2020
 * Added a "for loop" into the script, this "for loop" will iterate through the columns to calculate the statistics for each variable
 * Copied this code from the tempAnalysis.py file (which will be removed from repository) into the analysis.py file
