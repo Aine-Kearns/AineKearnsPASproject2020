@@ -4,26 +4,27 @@
   - Import a data file into the **analysis.py** script and add the pandas and matplotlib libraries which will allow me to complete statistical calculations and create graphs
   - Define the calculations that will be presented with summary statistics and establish how to calculate these
   - Write additional code into the script to output the summary statistics to a single text file 
-  - Using a "For Loop" I will create histograms for each variable and save these as png files
+  - Using a "For Loop" I will create histograms for each variable and save these as .png files
   - I will also create scatter plots for each pair of variables using the seaborn module <br>
 
 **Overview of python script**
-- The python script developed for this project is called **analysis.py** and it is made up of 5 sections which are outlined below
-  1. Import initial modules to be used in the script including pandas, sys, matplotlib 
-  2. Use pandas module to open and read the data file irish.data in the repository as a csv file in order to complete sections 3 - 5 of the script
+- The python script developed for this project is called **analysis.py** and it is made up of 5 sections which are outlined below reflecting their order in the script
+  1. Import initial modules to be used in the script including pandas, sys and matplotlib 
+  2. Use pandas module to open and read the data file iris.data (which is saved in the repository) as a csv file in order to complete sections 3 - 5 of the script
   3. Print the summary statistics using df.describe() and save this output to a text file called *summary_of_variables.txt* using the sys module
   4. Create and save histograms for each of the variables using a "For Loop" and the matplotlib module - each file is named after the associated variable i.e. *sepal length.png, sepal width.png, petal length.png, petal width.png* 
   5. Import seaborn and using this module create, save and print the scatterplots for pair of variables - file saved as *iris_data_pairplots.png*<br>
 
 **Iris Data Set**
-- The Iris Dataset is a well known dataset that was created by Ronald Fisher in 1936.  Fisher was a statistician and biologist and he used this dataset in his paper *The use of multiple measurements in taxonomic problems*.  The data was actually gathered by Edgar Anderson who was attempting to quantify variation associated with three related species of iris flowers. The dataset consists of 50 samples of each of the three species (*Iris setosa, Iris virginica and Iris veriscolor*) and four features were measured, all in centimeters: the length and the width of both the sepal and the petal.  Fisher used this data to develop a linear discriminant model to distinguish the species from each other  [https://en.wikipedia.org/wiki/Iris_flower_data_set]
+- The Iris Dataset is a well known dataset that was created by Ronald Fisher in 1936.  Fisher was a statistician and biologist and he used this dataset in his paper *The use of multiple measurements in taxonomic problems*.  The data was actually gathered by Edgar Anderson who was attempting to quantify variation associated with three related species of iris flowers. The dataset consists of 50 samples of each of the three species (*Iris setosa, Iris virginica and Iris veriscolor*) and four features were measured, all in centimeters: the length and the width of both the sepal and the petal.  Fisher used this data to develop a linear discriminant model to distinguish the species from each other  [https://en.wikipedia.org/wiki/Iris_flower_data_set].
 # Updates made
 ## 27th April 2020
 * Removed the import numpy command as this is not required in the current script
-* Established how to save the seaborn pairplots as a png file in the folder but in order to do this I needed to change the order of the scrip so the plt.show() command was last
+* Established how to save the seaborn pairplots as a .png file in the folder but in order to do this I needed to change the order of the script so the plt.show() command was last
 * Removed tempAnalysis.py from the repository - this was being used only to test changes 
+* Removed the matrix that was added on April 23rd - this is not required for the analysis
 ## 26th April 2020
-* Using information from [https://www.python-course.eu/sys_module.php] I've managed to save the output from df.describe() to a text file within the folder
+* Using information from [https://www.python-course.eu/sys_module.php] I've managed to save the output from df.describe() to a .txt file within the folder
 * I've decided to now remove the summary of variables under the "for loop" as noted on the notes from April 23rd, in this way the code is now reduced and easier to read 
 * I've updated some information above adding in the section on the Iris Data Set   
 ## 23rd April 2020
