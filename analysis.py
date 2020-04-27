@@ -1,4 +1,4 @@
-# this script will complete a number of tasks including:
+# This script will complete a number of tasks including:
 # output a summary of each variable from the iris data to a single text file
 # output a histogram of each variable - these will be saved a png files 
 # output a scatter plot of each pair of variables
@@ -10,21 +10,21 @@
 # https://seaborn.pydata.org/generated/seaborn.pairplot.html?highlight=pairplot#seaborn.pairplot
 # https://www.python-course.eu/sys_module.php
 
-# import the pandas library
+
 import pandas as pd
-# import the numpy library
-import numpy as np
-# in order to direct the output to a text file I also import sys 
+# in order to open the data file and complete calcuations  
 import sys
+# this will allow me to export to output the summary of each variable to a single text file
 import matplotlib.pyplot as plt
+# will allow for the creation of histograms
 
 
-
-# using pandas.read_csv will return a dataframe object for the data in the iris.data file
 df = pd.read_csv("iris.data")
+# using pandas.read_csv will return a dataframe object for the data in the iris.data file
 
 
 print(df.describe())
+# this will provide a set of summary statistics for each of the variables
 save_stdout = sys.stdout
 outF = open("summary_of_variables.txt", "w")
 sys.stdout = outF
@@ -33,6 +33,7 @@ print("")
 print(df.describe())
 sys.stdout = save_stdout
 outF.close()
+# this code will allow me to capture the output of the df.describe() function and write it to a file in the current folder
 
 
 df.columns
@@ -47,20 +48,12 @@ for col_name in df.columns[0:4]:
     plt.xlabel("measured in centimetres")
     plt.ylabel("Iris numbers")
     plt.savefig(col_name)
-    #plt.show()
     plt.clf()
     
 
-
-
-#import seaborn as sns
-#sns.set(style="ticks", color_codes=True)
-#iris = sns.load_dataset("iris.data")
-#g = sns.pairplot(iris, hue="class")
-
-#plt.plot(df["sepal length"]),(df["sepal width"], "b")
-#plt.plot(df["petal length"]),(df["petal width"], "r")
-#plt.plot(df["sepal length"]),(df["petal length"], "b")
-#plt.plot(df["sepal width"]),(df["petal width"], "b")
-
-#plt.show()
+import seaborn as sns
+# this library of plots that I can use to provide pair plots
+sns.set(style="ticks", color_codes=True)
+sns.pairplot(df, hue="class")
+plt.savefig("iris_data_pairplots.png")
+plt.show()
